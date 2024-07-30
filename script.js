@@ -19,9 +19,8 @@ $(document).on('keyup', function(e){
 })
 // When keys are pressed, they should be highlighted in the browser.
 $(document).on('keydown', function(e){
-    console.log(e.keyCode)
-    $(`#${e.keyCode}`).css('background-color','green');
-
+        $(`#${e.keyCode}`).css('background-color','green');
+        $(`#${e.keyCode+32}`).css('background-color','green');
 })
 
 });
